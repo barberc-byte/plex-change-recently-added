@@ -20,6 +20,20 @@ This makes it a completely non-destructive way to re-sort Plex without modifying
 
 ---
 
+### 🏷 Triggering Updates with Labels
+
+To mark an item for update:
+
+1. Open the movie/episode in Plex
+2. Add the label:
+
+   * `HOTFOR48H` → sets addedAt 48 hours in the future
+   * `ADDED1MONTHAGO` → sets addedAt 30 days in the past
+
+Run the script when you're ready, and it will process everything at once.
+
+---
+
 ### 🛠 Requirements
 
 * Python 3.8+
@@ -46,20 +60,6 @@ You’ll see a clean log output showing:
 * what their new timestamps are
 * which labels were removed
 * any errors (bad token, wrong URL, etc.)
-
----
-
-### 🏷 Triggering Updates with Labels
-
-To mark an item for update:
-
-1. Open the movie/episode in Plex
-2. Add the label:
-
-   * `HOTFOR48H` → sets addedAt 48 hours in the future
-   * `ADDED1MONTHAGO` → sets addedAt 30 days in the past
-
-Run the script when you're ready, and it will process everything at once.
 
 ---
 
